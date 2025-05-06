@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root{
+    --blanco-opacidad: rgba(255, 255, 255, 0.5);
+    --marron: rgb(41, 21, 3);
+    --marron-opacidad: rgba(41, 21, 3,0.5);
+    --marron-oliva: #8C7853;
+    --beige-arena:#D3BCA0;
+    --beige-arena-claro:#ddcebc;
+    --rosa-claro: rgb(240, 217, 218);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+body{
+    background-image:url(../img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Header*/
+
+.contenedor .cabecera, .contenedor .banner header{
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+.contenedor .cabecera .logo{
+    display: flex;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    width: 33.33%;
+}
+
+.contenedor .cabecera .logo img{
+    width: 200px;
+}
+
+.contenedor .cabecera .reservaForm{
+    width: 33.33%;
+    text-align: center;
+}
+
+#reservar,#reservarBanner{
+    background-color: var(--beige-arena);
+    padding: 7px 15px;
+    border-radius: 5px;
+    border-color: var(--beige-arena);
+    text-transform: uppercase;
+    color: var(--marron);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#reservar:hover,#reservarBanner:hover{
+    background-color: var(--marron);
+    border-color: var(--marron);
+    filter: opacity(60%);
+    color: var(--beige-arena);
+    transition: all 0.5s;
+}
+
+.contenedor header .telefono{
+    width: 33.33%;
+    text-align: center;
+    color: var(--marron);
+    font-weight: 600;
+}
+
+/* Footer */
+.contenedor .final_web{
+    margin-bottom: 1rem;
+    margin-top: 4rem;
+}
+
+.contenedor footer p{
+    text-align: center;
+    color: var(--marron);
+    font-weight: 600;
+}
+
+/* Menú */
+
+.contenedor .navbar{
+    width: 100%;
+    background-color: var(--blanco-opacidad);
+    padding: 1.5rem;
+}
+.contenedor .menu{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contenedor .menu li{
+    list-style: none;
+}
+
+.contenedor .menu li a{
+    text-decoration: none;
+    color: var(--marron);
+    font-weight: 600;
+    padding: 1rem;
+    font-size: 1em;
+    text-transform: uppercase;   
+}
+
+.contenedor .menu li a:hover{
+    filter: opacity(50%);
+    transition: all 0.2s;
+}
+
+
+#ckbox,.drawer{
+    display: none;
+}
+
+
+
+/* Contenido index.html */
+.contenedor .banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contenedor .banner header{
+    position: relative;
+    background-image: url(../img/fondo_banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    width: 100%;
+    min-height: 60vh;
+}
+
+.contenedor .banner header h1{
+    text-transform: uppercase;
+    color:var(--beige-arena-claro);
+    font-size: 3rem;
+    font-family: "Playfair Display", serif;
+}
+
+.contenedor .banner article{
+    width: 66.66%;
+    margin-top: 2rem;
+}
+
+
+.contenedor .banner article h2, .barra_lateral h2{
+    font-family: "Playfair Display", serif;
+    color:var(--marron);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.contenedor .banner footer{
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+/* Separador */
+hr{
+    color: var(--beige-arena);
+    background-color: var(--beige-arena);
+    border-color: var(--beige-arena);
+    border-radius: 5px;
+    height: 3px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.contenedor .barra_lateral{
+    margin: 2rem;
+}
+
+.contenedor .barra_lateral h3{
+    font-family: "Playfair Display", serif;
+    color:var(--marron);
+    filter: opacity(60%);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#titulorosa{
+    color: var(--marron);
+}
+
+.contenedor .barra_lateral div{
+    display: flex;
+}
+
+
+.contenedor .barra_lateral article{
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
+.contenedor .barra_lateral article p{
+    margin: 1rem;
+}
+
+/*****************LOCALIZACION*******************/
+.contenedor .localizacion{
+    margin-top: 2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contenedor .localizacion h1{
+    text-transform: uppercase;
+    color:var(--marron);
+    font-size: 3rem;
+    font-family: "Playfair Display", serif;
+}
+
+.contenedor .localizacion p{
+    display: block;
+    margin: 2rem;
+}
+
+.contenedor .localizacion p a{
+    text-decoration: none;
+    color: black;  
+}
+
+.contenedor .localizacion #mapa{
+    margin-top: 2rem;
+    width: 95%;
+    height: 50vh;
+    box-shadow: 0 0 25px 10px var(--beige-arena);
+    border-radius: 10px;
+}
+
+/******************** Media Query *****************/
+@media (max-width: 1020px) {
+    .navbar{
+        justify-content: flex-start;
+    }
+
+    .menu {
+        position: fixed;
+        width: 50%;
+        left: -100%;
+        height: 0px;
+        text-align: left;
+        transition: all 0.5s;
+        flex-direction: column;
+        align-content: stretch;
+    }
+    
+    .menu li {
+        display:flex;
+        flex-direction: column;
+        padding-left:2rem;
+    }
+
+    .menu li a{
+        text-align: left;
+    }
+
+    
+    #ckbox:checked ~.menu {
+        left: 0;
+        height: 40vh;
+    }
+
+    .drawer {
+        display: block;
+    }
+
+    .contenedor .barra_lateral div{
+        flex-direction: column;
+    }
+
+    .contenedor .barra_lateral div article{
+        margin-top: 2rem;
+    }
+
+    .contenedor .barra_lateral article{
+        width: 100%;
+    }
+}
+
+@media (max-width: 540px) {
+    .contenedor .cabecera {
+        justify-content: center;
+    }
+
+    .contenedor .cabecera .logo {
+        width: 100%; 
+    }
+
+    .contenedor .cabecera .logo img {
+        max-width: 100%; 
+    }
+
+    .contenedor .cabecera .reservaForm,
+    .contenedor .cabecera .telefono {
+        display: none;
+        width: 0;
+    }
+
+    .contenedor .banner header h1{
+        font-size: 2.5rem;
+    }
+    
+}
