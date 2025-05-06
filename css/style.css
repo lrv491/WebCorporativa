@@ -322,3 +322,38 @@ hr{
     }
     
 }
+/*****************NOTICIAS*******************/
+.contenedorNews {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.contenedorNews h1{
+    font-size: 2.5rem;
+}
+
+.contenedorNews .filtros {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+select input[type="text"] {
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.noticias {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minimax(300px, 1fr));
+    gap: 30px;
+}
+
+.cuadro {
+    border:1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
