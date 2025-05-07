@@ -322,14 +322,14 @@ hr{
     }
     
 }
-/*****************NOTICIAS*******************/
-.contenedorNews {
+/*****************PUBLICACIONES*******************/
+.contenedorPubli {
     max-width: 1200px;
     margin: 40px auto;
     padding: 0 20px;
 }
 
-.contenedorNews h1{
+.contenedorPubli h1{
     text-transform: uppercase;
     color:var(--marron);
     font-size: 3rem;
@@ -338,7 +338,7 @@ hr{
     margin-bottom: 2rem;
 }
 
-.contenedorNews .filtros {
+.contenedorPubli .filtros {
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
@@ -405,4 +405,20 @@ input  {
     display: block;
     margin-top: 10px;
     color: var(--marron-oliva);
+}
+
+/*****************NOTICIAS*******************/
+.contenedorNews {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.contenedorNews h1{
+    text-transform: uppercase;
+    color:var(--marron);
+    font-size: 3rem;
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    margin-bottom: 2rem;
 }
