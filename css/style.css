@@ -352,7 +352,7 @@ select input[type="text"] {
 
 .noticias {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minimax(300px, 1fr));
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual ancho */
     gap: 30px;
 }
 
@@ -362,7 +362,7 @@ select input[type="text"] {
     overflow: hidden;
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    width: 600px;
+    width: 100%;
 }
 
 .cuadro img {
