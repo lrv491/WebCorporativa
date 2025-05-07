@@ -362,6 +362,7 @@ select input[type="text"] {
     overflow: hidden;
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    width: 600px;
 }
 
 .cuadro img {
