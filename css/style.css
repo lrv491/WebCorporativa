@@ -330,18 +330,24 @@ hr{
 }
 
 .contenedorNews h1{
-    font-size: 2.5rem;
+    text-transform: uppercase;
+    color:var(--marron);
+    font-size: 3rem;
+    font-family: "Playfair Display", serif;
+    text-align: center;
 }
 
 .contenedorNews .filtros {
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
+    color:var(--marron);
 }
 
 select input[type="text"] {
     padding: 10px;
     font-size: 1rem;
+    color:var(--marron);
 }
 
 .noticias {
@@ -356,4 +362,33 @@ select input[type="text"] {
     overflow: hidden;
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.cuadro img {
+    width: 100%;
+    height: auto;
+}
+
+.cuadro-cont {
+    padding: 15px;
+    color:var(--marron);
+}
+
+.cuadro h3 {
+    font-size: 1.2rem;
+    color: var(--marron);
+}
+
+.cuadro p{
+    font-size: 0.95rem;
+}
+
+.cuadro .subtitular {
+    font-size: 0.5rem;
+}
+
+.leer-mas {
+    display: block;
+    margin-top: 10px;
+    color: var(--marron-oliva);
 }
