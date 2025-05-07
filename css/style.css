@@ -335,6 +335,7 @@ hr{
     font-size: 3rem;
     font-family: "Playfair Display", serif;
     text-align: center;
+    margin-bottom: 2rem;
 }
 
 .contenedorNews .filtros {
@@ -344,10 +345,17 @@ hr{
     color:var(--marron);
 }
 
-select input[type="text"] {
-    padding: 10px;
+select {
+    border-radius: 5px;
+    font-size: 15px;
+    color:var(--marron);
+}
+
+input  {
+    padding: 5px;
     font-size: 1rem;
     color:var(--marron);
+    border-radius: 5px;
 }
 
 .noticias {
@@ -363,6 +371,11 @@ select input[type="text"] {
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     width: 100%;
+    color: var(--marron);
+}
+
+.cuadro:hover {
+    opacity: 0.6;
 }
 
 .cuadro img {
