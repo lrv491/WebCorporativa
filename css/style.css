@@ -409,7 +409,7 @@ input  {
 
 /*****************NOTICIAS*******************/
 .contenedorNews {
-    max-width: 1200px;
+    max-width: 1150px;
     margin: 40px auto;
     padding: 0 20px;
 }
@@ -421,4 +421,72 @@ input  {
     font-family: "Playfair Display", serif;
     text-align: center;
     margin-bottom: 2rem;
+}
+
+.cuadro-news {
+    background-color: var(--blanco-opacidad);
+    border: 1px solid var(--beige-arena-claro);
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    display: flex;
+    /*flex-direction: column; /*Elementos apilados verticalmente (de arriba hacia abajo)*/
+}
+
+.cuadro-news .flex {
+    flex-direction: column; /*Elementos apilados verticalmente (de arriba hacia abajo)*/
+}
+
+.news-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.news-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.news-nombre {
+    font-size: 14px;
+    color: var(--marron);
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+h2 a {
+    text-decoration: none;
+    color: var(--marron);
+}
+
+h2 a:hover {
+    text-decoration: underline;
+    color: var(--marron-oliva);
+}
+
+p {
+    font-size: 14px;
+    color: var(--marron-oliva);
+    margin-bottom: 10px;
+    line-height: 1.5;/*altura de la línea de texto*/
+}
+
+.news-date {
+    font-size: 12px;
+    color: var(--marron-oliva);
+    margin-bottom: 10px;
+}
+
+.news-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;  /*el contenido se escala para llenar completamente el contenedor, manteniendo su relación de aspecto, pero recortando las partes que no caben.*/
+    border-radius: 5px;
+    margin-left: auto;
+   
 }
