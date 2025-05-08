@@ -1,0 +1,37 @@
+/*****************LOCALIZACION*******************/
+.contenedor .localizacion{
+    margin-top: 2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contenedor .localizacion h1{
+    text-transform: uppercase;
+    color:var(--marron);
+    font-size: 3rem;
+    font-family: "Playfair Display", serif;
+}
+
+.contenedor .localizacion p{
+    display: block;
+    margin: 2rem;
+}
+
+.contenedor .localizacion p a{
+    text-decoration: none;
+    color: black;  
+}
+
+/* Mapa sacado de google maps, dando a compartir */
+.contenedor .localizacion #mapa{
+    margin-top: 2rem;
+    width: 95%;
+    height: 50vh;
+    /* Darle sombra al mapa*/
+    box-shadow: 0 0 25px 10px var(--beige-arena);
+    border-radius: 10px;
+}
+

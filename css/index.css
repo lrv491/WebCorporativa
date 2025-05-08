@@ -1,0 +1,113 @@
+/**********************Index.html***********************/
+.contenedor .banner{
+    display: flex;
+    /* direccion del texto en columna */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contenedor .banner header{
+    position: relative;
+    /* poner de fondo una imagen al contenedor del h1 */
+    background-image: url(../img/fondo_banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* posicion centrada de la imagen */
+    background-position: 50%;
+    width: 100%;
+    min-height: 60vh;
+}
+
+.contenedor .banner header h1{
+    text-transform: uppercase;
+    color:var(--beige-arena-claro);
+    font-size: 3rem;
+    font-family: "Playfair Display", serif;
+}
+
+.contenedor .banner article{
+    /* Tamaño del articulo*/
+    width: 66.66%;
+    margin-top: 2rem;
+}
+
+
+.contenedor .banner article h2, .barra_lateral h2{
+    font-family: "Playfair Display", serif;
+    color:var(--marron);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.contenedor .banner footer{
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+/* Separador */
+hr{
+    color: var(--beige-arena);
+    background-color: var(--beige-arena);
+    border-color: var(--beige-arena);
+    border-radius: 5px;
+    height: 3px;
+    width: 60%;
+    /* Para centrarlo */
+    margin: 0 auto;
+}
+
+.contenedor .barra_lateral{
+    margin: 2rem;
+}
+
+.contenedor .barra_lateral h3{
+    font-family: "Playfair Display", serif;
+    color:var(--marron);
+    filter: opacity(60%);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#titulorosa{
+    color: var(--marron);
+}
+
+.contenedor .barra_lateral div{
+    display: flex;
+}
+
+
+.contenedor .barra_lateral article{
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
+.contenedor .barra_lateral article p{
+    margin: 1rem;
+}
+
+
+/******************** Media Query *****************/
+@media (max-width: 1020px) {
+    /* pone los articulos del aside en columna*/
+    .contenedor .barra_lateral div{
+        flex-direction: column;
+    }
+
+    .contenedor .barra_lateral div article{
+        margin-top: 2rem;
+    }
+
+    .contenedor .barra_lateral article{
+        width: 100%;
+    }
+}
+
+@media (max-width: 540px) {
+    .contenedor .banner header h1{
+        font-size: 2.5rem;
+    }    
+}

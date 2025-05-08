@@ -1,0 +1,122 @@
+/********************* Quienes Somos **************/
+
+.contenedor .quienesSomos{
+    margin-top: 2rem;
+}
+
+.contenedor .quienesSomos h1{
+    text-align: center;
+    text-transform: uppercase;
+    color:var(--marron);
+    font-size: 3rem;
+    font-family: "Playfair Display", serif;
+    margin-bottom: 3rem;
+}
+
+.contenedor .quienesSomos .quienesSomosContenido{
+    display: flex;
+    align-items: center;
+}
+
+.contenedor .quienesSomos .quienesSomosContenido .textoQuienesSomos{
+    margin-right: 1rem;
+    margin-left: 4rem;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+.contenedor  .textoQuienesSomos h2,.contenedor .equipo h2{
+    font-family: "Playfair Display", serif;
+    color:var(--marron);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+
+.contenedor .quienesSomos .quienesSomosContenido .textoQuienesSomos p{
+    margin-bottom: 1rem;
+    width: 80%;
+}
+
+.contenedor .quienesSomos .quienesSomosContenido .imgQuienesSomos{
+    width: 50%;
+    text-align: center;
+    margin-right: 2rem;
+}
+
+.contenedor .quienesSomos .quienesSomosContenido .imgQuienesSomos img{
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.contenedor .quienesSomos .equipo{
+    margin-top: 4rem;
+    width: 100%;
+}
+
+.contenedor .quienesSomos .equipo h2{
+    text-align: center;
+}
+
+.contenedor .quienesSomos .equipo .equipoPadre{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* los elementos tienen espacio entre ellos */
+    justify-content: space-between;
+}
+
+.contenedor .quienesSomos .equipo .equipoPadre .equipoContenido{
+    text-align: center;
+}
+
+.equipo p{
+    margin-bottom: 1rem;
+    font-family: "Playfair Display", serif;
+    color:var(--marron);
+    font-weight: 700;
+}
+
+.equipo img{
+    display: block;
+    width: 70%;
+    margin:0 auto;
+    border-radius: 10px;
+}
+
+
+/******************** Media Query *****************/
+@media (max-width: 1020px) {
+    .quienesSomos .quienesSomosContenido{
+        flex-direction: column;
+    }
+
+    .contenedor .quienesSomos .quienesSomosContenido .imgQuienesSomos{
+        width: 70%;
+        margin: 0;
+        margin-top: 2rem;
+    }
+
+    /*que el contenedor no ocupe toda la pantalla */
+    .contenedor .quienesSomos .quienesSomosContenido .textoQuienesSomos{
+        min-width: 60%;
+        margin: 0;
+    }
+
+    /*que el texto ocupe el 100% del contenedor */ 
+    .contenedor .quienesSomos .quienesSomosContenido .textoQuienesSomos  p{
+        min-width:100%;   
+    }
+}
+
+@media (max-width: 540px) {
+    /* Se cambian los div a columnas */
+    .contenedor .quienesSomos .equipo .equipoPadre{
+        flex-direction: column;
+    }
+
+    .contenedor .quienesSomos .equipo .equipoPadre .equipoContenido{
+        margin-bottom: 2rem;
+    }
+}
