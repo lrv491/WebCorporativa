@@ -487,6 +487,5 @@ p {
     height: 120px;
     object-fit: cover;  /*el contenido se escala para llenar completamente el contenedor, manteniendo su relación de aspecto, pero recortando las partes que no caben.*/
     border-radius: 5px;
-    margin-left: auto;
-   
+    margin-left: auto; 
 }
