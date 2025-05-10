@@ -1,0 +1,106 @@
+.areas {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.card {
+    margin-top: 20px;
+    position: relative;
+    width: 300px;
+    height: 350px;
+    /*Aplicar márgenes con resto de cartas*/
+    margin:40px;
+}
+
+.card .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /*determina si la cara posterior va a ser visible: NO VISIBLE */
+    backface-visibility: hidden; 
+    border-radius: 10px;
+    /*se oculta el contenido que sobresale*/
+    overflow: hidden; 
+    transition: 0.5s;
+
+}
+
+.card .front {
+    /*Efecto de movimiento*/
+    /*rotación sobre el eje Y un ángulo de 0º*/
+    transform: perspective(600px) rotateY(0deg); 
+    box-shadow: 0px 5px 10px #000 ; /*sombreado*/
+}
+
+.card .front img{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    /*Indica cómo el contenido de un elemento deberá ser redimensionado
+    para ajustarse a su contenedor*/
+    object-fit: cover;
+}
+
+.card .front h3{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: whitesmoke;
+    background: var(--marron-opacidad);
+    text-align: center;
+}
+
+.card .back{
+    /*rotación sobre el eje Y un ángulo de 180º*/
+    transform: perspective(600px) rotateY(180deg); 
+    background-color:var(--marron-oliva);
+    padding: 15px;
+    color: var(--beige-arena-claro);
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    text-align: center;
+    box-shadow: 0px 5px 10px var(--marron) ; /*sombreado*/
+}
+
+.card .back .link {
+    border-top: 1px solid whitesmoke;
+    height: 50px;
+    line-height: 45px;
+}
+
+.card .back .link a{
+    color: whitesmoke;
+}
+
+.card .back h3 {
+    font-size: 25px;
+    margin-top: 10px;
+    letter-spacing: 2px;
+}
+
+.card .back .parrafo{
+    letter-spacing: 1px;
+    color: whitesmoke;
+    text-align: center;
+    margin: 5px;
+    font-size: 14PX;
+}
+
+.card p {
+    margin-top: 5px;
+}
+
+.card:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+
+}
+
+.card:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+
+}
