@@ -10,6 +10,7 @@
 
     <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contacto.css">
     <title>Contacto</title>
 </head>
 <body>
@@ -40,6 +41,63 @@
             </ul>
         </nav>
 
+        <section class="contenedorContacto">
+            <h1>Contacto</h1>
+            <!--En el form haría falta el method="post", pero al hacerlo así
+            no me redirige a gracias.html y da el error 405, así que lo dejo
+            así que es como si pusiera method="get"-->
+            <form action="gracias.html" class="formularioContacto">
+                <fieldset>
+                    <legend>Datos Personales *</legend>
+                    <label for="name">Nombre *</label>
+                    <input type="text" name="name" id="name" required>
+                    
+                    <label for="apell" class="label">Apellidos *</label>
+                    <input type="text" name="apell" id="apell" required>
+                
+                    <label for="correo">Email *</label>
+                    <input type="email" name="correo" id="correo" required>
+            
+                    <label for="telf">Telefono *</label>
+                    <input type="tel" name="telf" id="telf" required>
+                    
+                
+                    <label for="fnac">Fecha de Nacimiento *</label>
+                    <input type="date" name="fnac" id="fnac" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Tratamiento *</legend>
+                    <select name="tratamiento" id="tratamiento">
+                        <option value="1">Depilación Láser</option>
+                        <option value="2">Despigmentación de la Piel</option>
+                        <option value="3">Limpieza Facial</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Información Extra</legend>
+                    <label for="img">Imagen de la Piel</label>
+                    <input type="file" name="img" id="img">
+
+                    <label for="comentario">Comentario</label>
+                    <textarea name="comentario" id="comentario"></textarea>
+                </fieldset>
+
+                <div class="checkbox">
+                    <input type="checkbox" id="politica" name="politica" required>
+                    <label for="politica">Acepto la <a href="https://www.aepd.es/politica-de-privacidad-y-aviso-legal">política de privacidad</a>.</label>
+                </div>
+                
+                <div class="botonesFormulario">
+                    <input type="submit" value="Enviar" id="enviarFormulario">
+                    <input type="reset" value="Borrar" id="borrarFormulario">
+                </div>
+                
+            </form>
+        </section>
+            
+        <!--No he visto necesario poner un aside-->
 
         <footer class="final_web">
             <p>&copy; Web Personal creada para la Actividad 3 - Web Corporativa de Lenguaje de Marcas de DAM</p>
