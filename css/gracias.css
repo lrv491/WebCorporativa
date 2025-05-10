@@ -1,0 +1,53 @@
+.contenedorGracias{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../img/gracias.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 3rem;
+    height: 70vh;
+}
+
+.contenedorGracias h1{
+    text-align: center;
+    /* Trasnfroma el texto a mayuscula */
+    text-transform: uppercase;
+    color:white;
+    font-size: 3rem;
+    font-family: "Playfair Display", serif;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+.contenedorGracias p{
+    text-align: center;
+    color:white;
+    font-size: 1.5rem;
+}
+.contenedorGracias form{
+    height: 10vh;
+}
+
+#volver{
+    background-color: var(--beige-arena);
+    padding: 7px 15px;
+    /* que el borde sea redondeado */
+    border-radius: 5px;
+    border-color: var(--beige-arena);
+    /* transforma el texto a mayusculas */
+    text-transform: uppercase;
+    color: var(--marron);
+    /* Grosor del texto */
+    font-weight: 600;
+    /* que el cursor cambie para que sepa que se puede hacer click */
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+#volver:hover{
+    padding: 12px 20px;
+    transition: all 0.3s;
+}

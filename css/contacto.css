@@ -1,0 +1,112 @@
+.contenedorContacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+
+.contenedorContacto h1{
+    text-align: center;
+    /* Trasnfroma el texto a mayuscula */
+    text-transform: uppercase;
+    color:var(--marron);
+    font-size: 3rem;
+    font-family: "Playfair Display", serif;
+    margin-bottom: 3rem;
+}
+
+.contenedorContacto .formularioContacto{
+    position: relative;
+    justify-content: center ;
+    background-color: var(--blanco-opacidad);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.contenedorContacto .formularioContacto fieldset{
+    border: 2px solid var(--beige-arena);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+}
+
+.contenedorContacto .formularioContacto fieldset legend{
+    /* Trasnfroma el texto a mayuscula */
+    color:var(--marron);
+    font-size: 1.5rem;
+    font-family: "Playfair Display", serif;
+    margin-bottom: 0.5rem;
+}
+
+.contenedorContacto .formularioContacto fieldset input, textarea, select{
+    margin-bottom: 1rem;
+    border: none;
+}
+
+.contenedorContacto .formularioContacto fieldset label{
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.contenedorContacto .formularioContacto fieldset input,select,textarea{
+    background-color: var(--beige-arena-claro);
+    padding: 0.5rem;
+}
+
+.contenedorContacto .formularioContacto fieldset #img{
+    background: none;
+    color: black;
+}
+
+.contenedorContacto .formularioContacto fieldset textarea{
+    height: 10vh;
+}
+
+.contenedorContacto .formularioContacto fieldset input:focus, select:focus, textarea:focus{
+    background-color: var(--marron-opacidad);
+    color: white;
+    border-color: var(--marron-opacidad);
+    box-shadow: none;
+}
+
+.contenedorContacto .formularioContacto .checkbox{
+    margin: 0.5rem 0;
+}
+
+.contenedorContacto .formularioContacto .botonesFormulario{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/*input[type="file"]::file-selector-button es el boton del input file,
+asi se llama al boton para cambiarle el estilo*/
+#enviarFormulario, #borrarFormulario, input[type="file"]::file-selector-button{
+    background-color: var(--beige-arena);
+    padding: 7px 15px;
+    /* que el borde sea redondeado */
+    border-radius: 5px;
+    border-color: var(--beige-arena);
+    /* transforma el texto a mayusculas */
+    text-transform: uppercase;
+    color: var(--marron);
+    /* Grosor del texto */
+    font-weight: 600;
+    /* que el cursor cambie para que sepa que se puede hacer click */
+    cursor: pointer;
+}
+
+#enviarFormulario:hover, #borrarFormulario:hover, input[type="file"]::file-selector-button:hover{
+    background-color: var(--marron);
+    border-color: var(--marron);
+    /* Le pongo un filtro para quitarle opacidad */
+    filter: opacity(60%);
+    color: var(--beige-arena);
+    transition: all 0.5s;
+}
+
+
+
